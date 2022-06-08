@@ -49,6 +49,10 @@ const FilteredEventsPage = ({ hasError, events, date: { year, month } }) => {
 
   return (
     <>
+      <Head>
+        <title>Filtered Events</title>
+        <meta name="description" content={`All events for ${month}/${year}.`} />
+      </Head>
       <ResultsTitle date={date} />
       <EventList items={events} />
     </>
